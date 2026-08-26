@@ -174,7 +174,7 @@ export default function CollectionsPage() {
                         "Handcrafted Quality",
                         "Timeless Design",
                         "Luxury Ceramic Art",
-                        "Refined Finishing",
+                        "Refined FiE-ing",
                       ].map((feature) => (
                         <div
                           key={feature}

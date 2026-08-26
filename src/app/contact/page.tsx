@@ -22,19 +22,19 @@ const contactInfo = [
   {
     icon: <FiPhone />,
     title: "Call Us",
-    value: "+91 9818185270",
+    value: "+91 9876543210",
     desc: "Mon to Sat • 10AM to 7PM",
   },
   {
     icon: <FiMail />,
     title: "Email Address",
-    value: "info@nishmee.in",
+    value: "info@E-commerce.in",
     desc: "We reply within 24 hours",
   },
   {
     icon: <FiMapPin />,
     title: "Our Office",
-    value: "Noida Sec-63,India",
+    value: "abc,India",
     desc: "Luxury spiritual and home decor products",
   },
   {

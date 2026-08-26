@@ -16,23 +16,14 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 sm:pt-20 pb-6 sm:pb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-14 border-b border-white/10 pb-12">
-          {/* Brand — same as before */}
+          {/* Brand —    */}
           <div>
             <h2 className="text-lg sm:text-xl font-bold tracking-wide mb-6">
               About Our Store
-              {/* <span className="text-[17px] sm:text-[18px] font-bold text-white uppercase tracking-[6px] text-[#111827]">
-                nish
-              </span>
-              <span className="text-[17px] sm:text-[18px] font-bold uppercase tracking-[6px] text-[#c9a96e]">
-                mee
-                <sup className="ml-[1px] text-[8px] sm:text-[9px] font-medium align-super tracking-normal text-[#c9a96e]">
-                  ™
-                </sup>
-              </span> */}
             </h2>
 
             <p className="text-gray-400 leading-7 sm:leading-8 text-sm sm:text-base mb-7">
-              NishMee brings divine craftsmanship into your living space —
+              E-commerce brings divine craftsmanship into your living space —
               spiritual idols, marble dust masterpieces, and luxury decor rooted
               in India's sacred art traditions.
             </p>
@@ -41,15 +32,15 @@ export default function Footer() {
               {[
                 {
                   icon: FiFacebook,
-                  link: "https://www.facebook.com/share/1FGBZkimmz/",
+                  link: "https://www.facebook.com/",
                 },
                 {
                   icon: FiInstagram,
-                  link: "https://www.instagram.com/shopnishmee/",
+                  link: "https://www.instagram.com/",
                 },
                 {
                   icon: FiTwitter,
-                  link: "https://x.com/shopnishmee",
+                  link: "https://x.com/",
                 },
               ].map(({ icon: Icon, link }, index) => (
                 <a
@@ -65,7 +56,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links — same as before */}
+          {/* Quick Links */}
           <div>
             <h3 className="text-lg sm:text-xl font-bold mb-6">Quick Links</h3>
             <div className="flex flex-col gap-4 text-gray-400 text-sm sm:text-base">
@@ -88,7 +79,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Categories — same as before */}
+          {/* Categories */}
           <div>
             <h3 className="text-lg sm:text-xl font-bold mb-6">Categories</h3>
             <div className="flex flex-col gap-4 text-gray-400 text-sm sm:text-base">
@@ -121,14 +112,14 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ── 4TH COLUMN — Contact & Promise (NAYA) ── */}
+          {/* ── 4TH COLUMN — Contact & Promise ── */}
           <div>
             <h3 className="text-lg sm:text-xl font-bold mb-6">Contact Us</h3>
 
             <div className="flex flex-col gap-4 mb-8">
               {[
-                { icon: FiMail, text: "info@nishmee.in" },
-                { icon: FiPhone, text: "+91 9818185270" },
+                { icon: FiMail, text: "info@E-commerce.in" },
+                { icon: FiPhone, text: "+91 9876543210" },
                 { icon: FiMapPin, text: "Fast & Secure Delivery" },
               ].map(({ icon: Icon, text }) => (
                 <div
@@ -145,10 +136,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom — same as before */}
+        {/* Bottom —    */}
         <div className="pt-7 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 text-sm sm:text-base">
           <p className="text-center md:text-left">
-           © 2026 NISHMEE™. All Rights Reserved.
+           © 2026 E-commerce™. All Rights Reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link

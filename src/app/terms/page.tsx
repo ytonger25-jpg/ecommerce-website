@@ -10,7 +10,7 @@ const sections = [
     content: [
       {
         subtitle: "",
-        text: "Welcome to NishMee. These Terms and Conditions govern your access to and use of our website and your purchase of products from our store. By accessing or using our website, you agree to be bound by these terms. If you do not agree with any part of these terms, please discontinue use of our website.",
+        text: "Welcome to E-commerce. These Terms and Conditions govern your access to and use of our website and your purchase of products from our store. By accessing or using our website, you agree to be bound by these terms. If you do not agree with any part of these terms, please discontinue use of our website.",
       },
     ],
   },
@@ -79,7 +79,7 @@ const sections = [
       },
       {
         subtitle: "Initiating a Return",
-        text: "To initiate a return, please contact us at support@nishmee.com with your order ID and reason for return. Our team will guide you through the process and provide further instructions.",
+        text: "To initiate a return, please contact us at support@E-commerce.com with your order ID and reason for return. Our team will guide you through the process and provide further instructions.",
       },
       {
         subtitle: "Refund Processing",
@@ -92,7 +92,7 @@ const sections = [
     content: [
       {
         subtitle: "",
-        text: "All content on this website, including text, graphics, logos, images, icons, and product designs, is the property of NishMee or its content suppliers and is protected by applicable intellectual property laws. Unauthorized reproduction, distribution, modification, or use of any content from this website without our prior written consent is strictly prohibited.",
+        text: "All content on this website, including text, graphics, logos, images, icons, and product designs, is the property of E-commerce or its content suppliers and is protected by applicable intellectual property laws. Unauthorized reproduction, distribution, modification, or use of any content from this website without our prior written consent is strictly prohibited.",
       },
     ],
   },
@@ -101,7 +101,7 @@ const sections = [
     content: [
       {
         subtitle: "",
-        text: "NishMee shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of, or inability to use, our website or products. To the maximum extent permitted by law, our total liability for any claim arising out of or relating to a purchase shall not exceed the amount paid by you for the product in question.",
+        text: "E-commerce shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of, or inability to use, our website or products. To the maximum extent permitted by law, our total liability for any claim arising out of or relating to a purchase shall not exceed the amount paid by you for the product in question.",
       },
     ],
   },
@@ -162,7 +162,7 @@ export default function TermsAndConditionsPage() {
             className="bg-white rounded-[24px] p-6 sm:p-8 mb-8 shadow-[0_4px_24px_rgba(0,0,0,0.05)]"
           >
             <p className="text-[15px] sm:text-[16px] text-[#4a4540] leading-[1.9]">
-              Welcome to <span className="font-bold text-[#111827]">NISH<span className="text-[#c9a96e]">MEE</span></span>. These Terms and Conditions outline the rules and regulations for the use of our website and the purchase of our products. By accessing this website, we assume you accept these terms and conditions in full. Please read them carefully before continuing to use our website.
+              Welcome to <span className="font-bold text-[#111827]">E-<span className="text-[#c9a96e]">commerce</span></span>. These Terms and Conditions outline the rules and regulations for the use of our website and the purchase of our products. By accessing this website, we assume you accept these terms and conditions in full. Please read them carefully before continuing to use our website.
             </p>
           </motion.div>
 
@@ -223,12 +223,12 @@ export default function TermsAndConditionsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="https://mail.google.com/mail/?view=cm&to=support@nishmee.com&su=Terms %26 Conditions Query&body=Hello Nish Mee Team,"
+                href="https://mail.google.com/mail/?view=cm&to=support@E-commerce.com&su=Terms %26 Conditions Query&body=Hello E- commerce Team,"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-[48px] items-center justify-center gap-2 rounded-full bg-white px-6 text-[13px] font-bold text-[#111827] hover:bg-[#c9a96e] transition-colors"
               >
-                📧 support@nishmee.com
+                📧 support@E-commerce.com
               </a>
               <a
                 href="/contact"

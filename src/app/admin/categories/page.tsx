@@ -180,7 +180,7 @@ export default function AdminCategoriesPage() {
   const openAdd = () => { setShowAddModal(true); setNewCategoryName(""); setError(""); };
   const closeModal = () => { setShowAddModal(false); setEditCategory(null); setError(""); setNewCategoryGroup(""); };
 
-  // ADD CATEGORY — MongoDB me save
+  // ADD CATEGORY — MongoDB me insert
   const handleAddCategory = async () => {
     const name = newCategoryName.trim();
     if (!name) { setError("Category name is required."); return; }

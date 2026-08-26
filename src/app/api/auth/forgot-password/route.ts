@@ -37,7 +37,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: "onboarding@resend.dev",
       to: email,
-      subject: "Reset your NishMee password",
+      subject: "Reset your E-commerce password",
       html: `<h2>Your password reset OTP is</h2><h1>${otp}</h1><p>This OTP expires in 10 minutes</p>`,
     });
 

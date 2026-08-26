@@ -38,7 +38,7 @@ export const products: Product[] = [
     description:
       "Black and red ceramic hand or fist sculptures in fist bump pose. Bold conversation piece.",
     features: [
-      "Premium ceramic finish",
+      "Premium ceramic fiE-",
       "Handcrafted detailing",
       "Luxury decor piece",
       "Modern aesthetic",
@@ -67,7 +67,7 @@ export const products: Product[] = [
     description:
       "White and black abstract human couple hugging each other. Togetherness concept piece.",
     features: [
-      "Marble dust finish",
+      "Marble dust fiE-",
       "Elegant handcrafted style",
       "Premium quality",
       "Luxury decor appeal",
@@ -97,7 +97,7 @@ export const products: Product[] = [
       "Teal donut vase with stunning 3D ceramic flower crown on top. Premium product shot.",
     features: [
       "Premium ceramic material",
-      "Luxury matte finish",
+      "Luxury matte fiE-",
       "Dishwasher safe",
       "Modern design",
     ],
@@ -126,7 +126,7 @@ export const products: Product[] = [
       "Black and red matching phoenix or bird abstract sculptures. Foam background product shot.",
     features: [
       "Handcrafted design",
-      "Premium finish",
+      "Premium fiE-",
       "Luxury home decor",
       "Durable quality",
     ],
@@ -156,7 +156,7 @@ export const products: Product[] = [
     features: [
       "Premium ceramic body",
       "Scratch resistant",
-      "Luxury finish",
+      "Luxury fiE-",
       "Food safe material",
     ],
   },
@@ -185,7 +185,7 @@ export const products: Product[] = [
     features: [
       "Wall hanging ready",
       "Traditional artwork",
-      "Premium finish",
+      "Premium fiE-",
       "Elegant aesthetics",
     ],
   },
@@ -212,7 +212,7 @@ export const products: Product[] = [
     description:
       "S-shaped vase with 3 openings, hand-painted cherries, strawberries and hearts. Playful design.",
     features: [
-      "Luxury metallic finish",
+      "Luxury metallic fiE-",
       "Elegant handcrafted design",
       "Premium quality",
       "Modern decor piece",
@@ -241,7 +241,7 @@ export const products: Product[] = [
       "Red and black abstract ceramic dancing couple in passionate tango pose. Romantic decor.",
     features: [
       "Premium wall artwork",
-      "Luxury finish",
+      "Luxury fiE-",
       "Easy installation",
       "Modern design",
     ],

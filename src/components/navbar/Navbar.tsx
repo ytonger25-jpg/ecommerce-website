@@ -226,8 +226,8 @@ export default function Navbar({
               <div className="flex flex-col items-start justify-center">
                 <div className="relative h-10 w-20 sm:h-12 sm:w-24">
                   <Image
-                    src="/images/LOGO-TM.png"
-                    alt="NishMee Logo"
+                    src="/images/"
+                    alt="E-commerce Logo"
                     fill
                     sizes="200px"
                     priority
@@ -236,10 +236,10 @@ export default function Navbar({
                 </div>
                 <div className="flex items-center leading-none">
                   <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[5px] text-[#111827]">
-                    nish
+                    E-
                   </span>
                   <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[5px] text-[#c9a96e]">
-                    mee
+                    commerce
                   </span>
                 </div>
               </div>

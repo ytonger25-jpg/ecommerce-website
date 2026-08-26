@@ -142,7 +142,6 @@ export default function FeaturedProducts() {
         {/* Slider with floating side arrows */}
         <div className="relative">
 
-          {/* Left Arrow — floats on left edge of products */}
          {/* Left Arrow */}
           {canScrollLeft && (
             <button

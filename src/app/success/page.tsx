@@ -53,7 +53,7 @@ export default function SuccessPage() {
                 </h1>
 
                 <p className="mx-auto max-w-xl text-[14px] leading-7 text-white/70">
-                  Thank you for shopping with NishMee. Your order has been
+                  Thank you for shopping with E-commerce. Your order has been
                   placed successfully and is now being prepared for delivery.
                 </p>
 

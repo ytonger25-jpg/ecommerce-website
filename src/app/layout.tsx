@@ -25,8 +25,8 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "NishMee — Luxury Spiritual & Home Decor",
-    template: "%s | NishMee",
+    default: "E-commerce — Luxury Spiritual & Home Decor",
+    template: "%s | E-commerce",
   },
   description:
     "Discover premium handcrafted ceramic vases, marble dust decor, luxury showpieces, spiritual idols, Buddha & monk sculptures and elegant home decor pieces crafted for timeless interiors.",
@@ -34,28 +34,27 @@ export const metadata: Metadata = {
     "luxury home decor", "handcrafted ceramic vases", "marble dust decor",
     "spiritual idols", "buddha monk sculptures", "luxury showpieces",
     "divine collection", "handcraft idols", "home decor india",
-    "premium ceramic decor", "luxury sculptures", "nishmee",
+    "premium ceramic decor", "luxury sculptures", "E-commerce",
   ],
-  authors: [{ name: "NishMee", url: "https://nishmee.com" }],
-  creator: "NishMee",
-  publisher: "NishMee",
+  authors: [{ name: "E-commerce", url: "https://E-commerce.com" }],
+  creator: "E-commerce",
+  publisher: "E-commerce",
   openGraph: {
-    type: "website", locale: "en_IN", url: "https://nishmee.com",
-    siteName: "NishMee", title: "NishMee — Luxury Spiritual & Home Decor",
+    type: "website", locale: "en_IN", url: "https://E-commerce.com",
+    siteName: "E-commerce", title: "E-commerce — Luxury Spiritual & Home Decor",
     description: "Premium handcrafted ceramic vases, marble decor, spiritual idols & luxury showpieces designed for elegant modern living.",
-    images: [{ url: "https://nishmee.com/images/LOGO.png", width: 1200, height: 630, alt: "NishMee — Luxury Home Decor" }],
+    images: [{ url: "https://E-commerce.com/images/LOGO.png", width: 1200, height: 630, alt: "E-commerce — Luxury Home Decor" }],
   },
   twitter: {
-    card: "summary_large_image", title: "NishMee — Luxury Spiritual & Home Decor",
+    card: "summary_large_image", title: "E-commerce — Luxury Spiritual & Home Decor",
     description: "Premium handcrafted ceramic vases, marble decor, spiritual idols & luxury showpieces.",
-    images: ["https://nishmee.com/images/LOGO.png"], creator: "@nishmee",
+    images: ["https://E-commerce.com/images/LOGO.png"], creator: "@E-commerce",
   },
   robots: {
     index: true, follow: true,
     googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
   },
-  alternates: { canonical: "https://nishmee.com" },
-  icons: { icon: "/favicon.ico", shortcut: "/favicon.ico", apple: "/apple-touch-icon.png" },
+  alternates: { canonical: "https://E-commerce.com" },
 };
 
 export default async function RootLayout({

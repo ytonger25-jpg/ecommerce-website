@@ -26,38 +26,10 @@ import { RootState } from "@/store/store";
 import Footer from "@/components/footer/Footer";
 import { clearCart } from "@/store/features/cartSlice";
 
-// Razorpay types
-declare global {
-  interface Window {
-    Razorpay: any;
-  }
-}
-
-// Load Razorpay script
-const loadRazorpayScript = (): Promise<boolean> => {
-  return new Promise((resolve) => {
-    if (
-      document.querySelector(
-        'script[src="https://checkout.razorpay.com/v1/checkout.js"]',
-      )
-    ) {
-      resolve(true);
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
-    script.onload = () => resolve(true);
-    script.onerror = () => resolve(false);
-    document.body.appendChild(script);
-  });
-};
-
 export default function CheckoutPage() {
   const dispatch = useDispatch();
   const [cartItems, setCartItems] = useState<any[]>([]);
-  const [paymentMethod, setPaymentMethod] = useState<"razorpay" | "cod">(
-    "razorpay",
-  );
+  const [paymentMethod] = useState<"cod">("cod");
   const [processing, setProcessing] = useState(false);
   const [cartLoaded, setCartLoaded] = useState(false);
 
@@ -100,7 +72,7 @@ export default function CheckoutPage() {
       status: "Processing",
       paymentId,
       paymentStatus,
-      paymentMethod: paymentMethod === "razorpay" ? "Online" : "COD",
+      paymentMethod: "COD",
       shippingAddress: `${formData.fullName}, ${formData.address}, ${formData.city}, ${formData.state} - ${formData.zip}`,
       phone: formData.phone,
       items: cartItems.map((item) => ({
@@ -119,107 +91,6 @@ export default function CheckoutPage() {
       body: JSON.stringify(orderData),
     });
     return await res.json();
-  };
-
-  // RAZORPAY PAYMENT
-  const handleRazorpayPayment = async () => {
-    setProcessing(true);
-
-    try {
-      const loaded = await loadRazorpayScript();
-      if (!loaded) {
-        toast.error("Razorpay failed to load. Check your internet connection.");
-        setProcessing(false);
-        return;
-      }
-
-      const orderRes = await fetch("/api/payment/create-order", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount: total }),
-      });
-      const orderData = await orderRes.json();
-
-      if (!orderData.success) {
-        toast.error("Could not initiate payment. Please try again.");
-        setProcessing(false);
-        return;
-      }
-
-      const options = {
-        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
-        amount: orderData.order.amount,
-        currency: "INR",
-        name: "NishMee",
-        description: "Luxury Home Decor",
-        order_id: orderData.order.id,
-        prefill: {
-          name: formData.fullName,
-          email: formData.email,
-          contact: formData.phone,
-        },
-        theme: { color: "#111827" },
-
-        // UPI + all methods enabled
-        method: {
-          upi: true,
-          card: true,
-          netbanking: true,
-          wallet: true,
-        },
-
-        handler: async (response: any) => {
-          try {
-            const verifyRes = await fetch("/api/payment/verify", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                razorpay_order_id: response.razorpay_order_id,
-                razorpay_payment_id: response.razorpay_payment_id,
-                razorpay_signature: response.razorpay_signature,
-              }),
-            });
-            const verifyData = await verifyRes.json();
-
-            if (!verifyData.success) {
-              toast.error("Payment verification failed. Contact support.");
-              setProcessing(false);
-              return;
-            }
-
-            const saved = await saveOrder(response.razorpay_payment_id, "Paid");
-            if (saved.success) {
-              dispatch(clearCart());
-              toast.success("Order placed successfully!");
-              window.location.href = "/success";
-            } else {
-              toast.error(
-                "Order save failed. Contact support with payment ID: " +
-                response.razorpay_payment_id,
-              );
-            }
-          } catch (err) {
-            console.error(err);
-            toast.error("Something went wrong after payment.");
-          } finally {
-            setProcessing(false);
-          }
-        },
-
-        modal: {
-          ondismiss: () => {
-            setProcessing(false);
-          },
-        },
-      };
-
-      const rzp = new window.Razorpay(options);
-      rzp.open();
-    } catch (error) {
-      console.error(error);
-      toast.error("Payment failed. Please try again.");
-      setProcessing(false);
-    }
   };
 
   // COD ORDER
@@ -273,11 +144,7 @@ export default function CheckoutPage() {
       return;
     }
 
-    if (paymentMethod === "razorpay") {
-      await handleRazorpayPayment();
-    } else {
-      await handleCOD();
-    }
+    await handleCOD();
   };
 
   useEffect(() => {
@@ -543,9 +410,7 @@ export default function CheckoutPage() {
                     <div>
                       <p className="text-sm text-white/60">Total Amount</p>
                       <p className="text-xs text-white/40">
-                        {paymentMethod === "razorpay"
-                          ? "Pay via Razorpay"
-                          : "Cash On Delivery"}
+                        Cash On Delivery
                       </p>
                     </div>
                     <span className="text-[28px] font-black text-white">
@@ -554,26 +419,23 @@ export default function CheckoutPage() {
                   </div>
                 </div>
 
-                {/* COMPACT PAYMENT METHOD TOGGLE */}
+                {/* PAYMENT METHOD (COD active, Online disabled) */}
                 <div className="mb-4 grid grid-cols-2 gap-1.5 rounded-2xl bg-[#f8f5f0] p-1.5">
                   <button
                     type="button"
-                    onClick={() => setPaymentMethod("razorpay")}
-                    className={`flex items-center justify-center gap-1.5 rounded-xl py-2.5 text-[12px] font-bold transition-all ${paymentMethod === "razorpay"
-                        ? "bg-white text-[#111827] shadow-sm"
-                        : "text-[#a89880]"
-                      }`}
+                    disabled
+                    title="Coming Soon"
+                    className="relative flex cursor-not-allowed items-center justify-center gap-1.5 rounded-xl py-2.5 text-[12px] font-bold text-[#c4b8a8]"
                   >
                     <FiCreditCard size={13} />
                     Pay Online
+                    <span className="absolute -top-2 right-1 rounded-full bg-[#c9a96e] px-1.5 py-[1px] text-[9px] font-bold text-white">
+                      Soon
+                    </span>
                   </button>
                   <button
                     type="button"
-                    onClick={() => setPaymentMethod("cod")}
-                    className={`flex items-center justify-center gap-1.5 rounded-xl py-2.5 text-[12px] font-bold transition-all ${paymentMethod === "cod"
-                        ? "bg-white text-[#111827] shadow-sm"
-                        : "text-[#a89880]"
-                      }`}
+                    className="flex items-center justify-center gap-1.5 rounded-xl bg-white py-2.5 text-[12px] font-bold text-[#111827] shadow-sm"
                   >
                     <FiSmartphone size={13} />
                     Cash On Delivery
@@ -596,7 +458,7 @@ export default function CheckoutPage() {
                   ) : (
                     <>
                       <FiLock size={15} />
-                      {paymentMethod === "razorpay" ? "Pay Now" : "Place Order"}
+                      Place Order
                     </>
                   )}
                 </motion.button>

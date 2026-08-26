@@ -50,7 +50,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: "onboarding@resend.dev",
       to: email,
-      subject: "Verify your NishMee account",
+      subject: "Verify your E-commerce account",
       html: `<h2>Your OTP is</h2><h1>${otp}</h1><p>This OTP expires in 10 minutes</p>`,
     });
 

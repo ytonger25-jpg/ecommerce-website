@@ -34,7 +34,7 @@ export default function AdminMobileBar() {
                 <div className="relative h-10 w-20 sm:h-12 sm:w-24">
                   <Image
                     src="/images/LOGO.png"
-                    alt="NishMee Logo"
+                    alt="E-commerce Logo"
                     fill
                     priority
                     className="object-contain"
@@ -43,11 +43,11 @@ export default function AdminMobileBar() {
 
                 <div className="flex items-center leading-none">
                   <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[5px] text-[#111827]">
-                    nish
+                    E-
                   </span>
 
                   <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[5px] text-[#c9a96e]">
-                    mee
+                    commerce
                   </span>
                 </div>
               </div>

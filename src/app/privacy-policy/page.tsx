@@ -52,7 +52,7 @@ const sections = [
             },
             {
                 subtitle: "Business Transfers",
-                text: "If Nish Mee is involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will notify you before your information is transferred.",
+                text: "If E- commerce is involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will notify you before your information is transferred.",
             },
         ],
     },
@@ -169,7 +169,7 @@ export default function PrivacyPolicyPage() {
                         className="bg-white rounded-[24px] p-6 sm:p-8 mb-8 shadow-[0_4px_24px_rgba(0,0,0,0.05)]"
                     >
                         <p className="text-[15px] sm:text-[16px] text-[#4a4540] leading-[1.9]">
-                            At <span className="font-bold text-[#111827]">NISH<span className="flex-row text-[#c9a96e]">MEE</span></span>, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or make a purchase. Please read this policy carefully. By using our services, you agree to the practices described in this policy.
+                            At <span className="font-bold text-[#111827]">E-<span className="flex-row text-[#c9a96e]">commerce</span></span>, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or make a purchase. Please read this policy carefully. By using our services, you agree to the practices described in this policy.
                         </p>
                     </motion.div>
 
@@ -230,12 +230,12 @@ export default function PrivacyPolicyPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3">
                             <a
-                                href="https://mail.google.com/mail/?view=cm&to=nishmee@gmail.com&su=Privacy Policy Query&body=Hello Nish Mee Team,"
+                                href="https://mail.google.com/mail/?view=cm&to=E-commerce@gmail.com&su=Privacy Policy Query&body=Hello E- commerce Team,"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex h-[48px] items-center justify-center gap-2 rounded-full bg-white px-6 text-[13px] font-bold text-[#111827] hover:bg-[#c9a96e] transition-colors"
                             >
-                                📧 nishmee@gmail.com
+                                📧 E-commerce@gmail.com
                             </a>
                             <a
                                 href="/contact"

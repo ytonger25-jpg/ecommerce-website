@@ -65,17 +65,17 @@ export default function AboutPage() {
               className="text-center lg:text-left"
             >
               <span className="inline-block mb-5 px-4 py-1.5 rounded-full text-[#c9a96e] text-[11px] font-bold uppercase tracking-[4px]">
-                About NishMee
+                About E-commerce
               </span>
 
               <h1 className="font-black text-[#111827] leading-[1.1] text-[clamp(36px,6vw,64px)] mb-6">
                 Where Luxury
                 <br />
-                <span className="text-[#c9a96e]">Meets the Divine</span>
+                <span className="text-[#c9a96e]">meets the Divine</span>
               </h1>
 
               <p className="text-gray-500 leading-[1.9] text-[15px] max-w-[540px] mx-auto lg:mx-0 mb-8">
-                NishMee brings together the sacred and the beautiful — handcrafted
+                E-commerce brings together the sacred and the beautiful — handcrafted
                 spiritual idols, marble dust masterpieces, and luxury decor that
                 transform your home into a space of divine elegance and inner peace.
               </p>
@@ -183,7 +183,7 @@ export default function AboutPage() {
               </h2>
 
               <p className="text-gray-500 leading-[1.9] text-[15px] mb-4">
-                NishMee was born from a deep reverence for India's spiritual heritage and
+                E-commerce was born from a deep reverence for India's spiritual heritage and
                 its extraordinary craft traditions. We saw an opportunity to bring
                 hand-made devotional art into contemporary homes — not as mere objects,
                 but as living expressions of faith and beauty.
@@ -191,7 +191,7 @@ export default function AboutPage() {
 
               <p className="text-gray-500 leading-[1.9] text-[15px] mb-8">
                 From intricately sculpted Ganesha idols and radiant Lakshmi figurines
-                to marble dust wall art and sacred pooja décor — every NishMee piece
+                to marble dust wall art and sacred pooja décor — every E-commerce piece
                 carries the energy of the artisan's hands and the intention of something
                 greater than the material itself.
               </p>
@@ -217,10 +217,10 @@ export default function AboutPage() {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
           <div className="text-center mb-12 sm:mb-16">
             <p className="uppercase text-[#c9a96e] font-bold tracking-[4px] text-[11px] mb-3">
-              Why Choose NishMee
+              Why Choose E-commerce
             </p>
             <h2 className="font-black text-[#111827] text-[clamp(28px,5vw,50px)] mb-4 leading-tight">
-              The NishMee Promise
+              The E-commerce Promise
             </h2>
             <p className="text-gray-500 mx-auto leading-[1.9] text-[15px] max-w-[580px]">
               Every piece we create is an act of devotion — to craft, to beauty,

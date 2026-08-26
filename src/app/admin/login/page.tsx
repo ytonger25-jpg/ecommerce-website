@@ -43,9 +43,9 @@ export default function AdminLoginPage() {
         {/* Brand logo */}
         <div className="mb-8 flex flex-col items-center">
           <div className="flex h-16 w-16 items-center justify-center rounded-[20px] bg-[#111827] mb-4">
-            <span className="text-[22px] font-black text-[#c9a96e]">N</span>
+            <span className="text-[22px] font-black text-[#c9a96e]">E</span>
           </div>
-          <p className="text-[11px] font-bold uppercase tracking-[4px] text-[#c9a96e]">NishMee</p>
+          <p className="text-[11px] font-bold uppercase tracking-[4px] text-[#c9a96e]">E-commerce</p>
           <h1 className="text-[28px] font-black text-[#111827] leading-tight">Admin Login</h1>
         </div>
 
@@ -106,7 +106,7 @@ export default function AdminLoginPage() {
         </div>
 
         <p className="mt-5 text-center text-[12px] text-[#b0a99a]">
-          Restricted access · NishMee Store
+          Restricted access · E-commerce Store
         </p>
 
       </div>

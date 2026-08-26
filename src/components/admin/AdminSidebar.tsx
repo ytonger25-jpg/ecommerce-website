@@ -46,7 +46,6 @@ export default function AdminSidebar() {
   router.push("/admin/login");
 };
 
-  // Expose setMobileOpen globally so AdminMobileBar can trigger it
   useEffect(() => {
     (window as any).__adminOpenSidebar = () => setMobileOpen(true);
     return () => { delete (window as any).__adminOpenSidebar; };
@@ -124,7 +123,7 @@ export default function AdminSidebar() {
                 <div className="relative h-10 w-20 sm:h-12 sm:w-24">
                   <Image
                     src="/images/LOGO.png"
-                    alt="NishMee Logo"
+                    alt="E-commerce Logo"
                     fill
                     priority
                     className="object-contain"
@@ -133,11 +132,11 @@ export default function AdminSidebar() {
 
                 <div className="flex items-center leading-none">
                   <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[5px] text-[#111827]">
-                    nish
+                    E-
                   </span>
 
                   <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[5px] text-[#c9a96e]">
-                    mee
+                    commerce
                   </span>
                 </div>
               </div>
@@ -167,7 +166,7 @@ export default function AdminSidebar() {
                 <div className="relative h-10 w-20 sm:h-12 sm:w-24">
                   <Image
                     src="/images/LOGO.png"
-                    alt="NishMee Logo"
+                    alt="E-commerce Logo"
                     fill
                     priority
                     className="object-contain"
@@ -176,11 +175,11 @@ export default function AdminSidebar() {
 
                 <div className="flex items-center leading-none">
                   <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[5px] text-[#111827]">
-                    nish
+                    E-
                   </span>
 
                   <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[5px] text-[#c9a96e]">
-                    mee
+                    commerce
                   </span>
                 </div>
               </div>
@@ -191,13 +190,6 @@ export default function AdminSidebar() {
           <NavLinks />
         </div>
         <div className="border-t border-[#f3f4f6] px-3 py-4 space-y-1">
-          {/* <div className="flex items-center gap-3 rounded-2xl px-4 py-3 bg-[#f8f9fb]">
-            <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-[#111827] text-[11px] font-black text-[#c9a96e]">A</div>
-            <div className="min-w-0">
-              <p className="truncate text-[13px] font-black text-[#111827]">Admin</p>
-              <p className="truncate text-[11px] text-[#9ca3af]">NishMee Store</p>
-            </div>
-          </div> */}
           <LogoutBtn />
         </div>
       </div>

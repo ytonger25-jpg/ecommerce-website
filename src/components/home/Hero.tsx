@@ -45,7 +45,7 @@ export default function Hero() {
               Where Luxury
 
               <span className="block text-[#e7d9c9] mt-1">
-                Meets Lifestyle
+                meets Lifestyle
               </span>
 
               <span className="block text-[#e7d9c9]">

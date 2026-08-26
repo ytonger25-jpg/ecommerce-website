@@ -39,7 +39,7 @@ const sections = [
         content: [
             {
                 subtitle: "Step 1 — Contact Us",
-                text: "Email us at info@nishmee.in or call +91 9818185270 within 7 days of delivery, mentioning your order ID and reason for return.",
+                text: "Email us at info@E-commerce.in or call +91 9876543210 within 7 days of delivery, mentioning your order ID and reason for return.",
             },
             {
                 subtitle: "Step 2 — Approval",
@@ -138,7 +138,7 @@ export default function ReturnPolicyPage() {
                         className="bg-white rounded-[24px] p-6 sm:p-8 mb-8 shadow-[0_4px_24px_rgba(0,0,0,0.05)]"
                     >
                         <p className="text-[15px] sm:text-[16px] text-[#4a4540] leading-[1.9]">
-                            At <span className="font-bold text-[#111827]">NISH<span className="flex-row text-[#c9a96e]">MEE</span></span>, we want you to love what you ordered. This Return & Refund Policy explains the conditions under which returns are accepted, how refunds are processed, and what to do if something isn't quite right. Please read this policy carefully before requesting a return.
+                            At <span className="font-bold text-[#111827]">E-<span className="flex-row text-[#c9a96e]">commerce</span></span>, we want you to love what you ordered. This Return & Refund Policy explains the conditions under which returns are accepted, how refunds are processed, and what to do if something isn't quite right. Please read this policy carefully before requesting a return.
                         </p>
                     </motion.div>
 
@@ -199,12 +199,12 @@ export default function ReturnPolicyPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3">
                             <a
-                                href="https://mail.google.com/mail/?view=cm&to=info@nishmee.in&su=Return Request&body=Hello Nish Mee Team,%0D%0A%0D%0AOrder ID:%0D%0AReason for return:"
+                                href="https://mail.google.com/mail/?view=cm&to=info@E-commerce.in&su=Return Request&body=Hello E- commerce Team,%0D%0A%0D%0AOrder ID:%0D%0AReason for return:"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex h-[48px] items-center justify-center gap-2 rounded-full bg-white px-6 text-[13px] font-bold text-[#111827] hover:bg-[#c9a96e] transition-colors"
                             >
-                                📧 info@nishmee.in
+                                📧 info@E-commerce.in
                             </a>
                             <a
                                 href="/contact"
